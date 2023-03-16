@@ -1,0 +1,57 @@
+div {
+  text-align: center;
+  background-color: blue;
+  color: white;
+  font-size: 200px;
+}
+
+@media only screen and (min-width: 480px) {
+  body {
+    background-color: black;
+  }
+  .device span::after {
+    content: " Mobile";
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: green;
+  }
+  .device span::after {
+    content: "Tablet";
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  body {
+    background-color: orange;
+  }
+  .device span::after {
+    content: "Tablet in Landscape";
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1310px) {
+  body {
+    background-color: pink;
+  }
+  .device span::after {
+    content: "Laptop";
+  }
+}
+@media only screen and (min-width: 1280px) {
+  body {
+    background-color: blue;
+  }
+  .device span::after {
+    content: "Desktop";
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 850px) {
+  body {
+    background-color: red;
+  }
+  .device span::after {
+    content: "Red";
+  }
+}
